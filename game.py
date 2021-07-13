@@ -13,7 +13,7 @@ if (x == "Rock") or (x == "Paper") or (x == "Scissors"):
     print("Valid")
 else: 
     print("Oops, invalid, please try again")
-exit()
+    exit()
 print("Player Selected: ", x)
 
 # simulating computer selection
@@ -21,4 +21,4 @@ print("Player Selected: ", x)
 import random
 valid_options = ["Rock", "Paper", "Scissors"]
 c = random.choice(valid_options)
-print("Computer Selected:", c)
+print("Computer Selected: ", c)
