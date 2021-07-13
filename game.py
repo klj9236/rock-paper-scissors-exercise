@@ -4,14 +4,21 @@ print("Rock, Paper, Scissors, Shoot!")
 
 
 # ask for a user input
-x = input("Please choose either 'rock, 'paper', 'scissors'")
+x = input("Please choose either Rock, Paper, Scissors: ")
 print(x)
 
 # validate the user input
 
-if (x == "rock") or (x == "paper") or (x == "scissors"):
-    print("valid")
+if (x == "Rock") or (x == "Paper") or (x == "Scissors"):
+    print("Valid")
 else: 
     print("Oops, invalid, please try again")
 exit()
-print("later messages")
+print("Player Selected: ", x)
+
+# simulating computer selection
+
+import random
+valid_options = ["Rock", "Paper", "Scissors"]
+c = random.choice(valid_options)
+print("Computer Selected:", c)
