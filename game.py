@@ -1,7 +1,15 @@
 # game.py
+import random
+import os
+from dotenv import load_dotenv
+load_dotenv() #> loads contents of the .env file into the script's environment
 
+#brings in the player name from enviroment
+z = os.getenv("USER_NAME")
 
-print("Rock, Paper, Scissors, Shoot!")
+print(z)
+
+print("Welcome", z, "Rock, Paper, Scissors, Shoot!")
 
 
 # ask for a user input
@@ -19,7 +27,7 @@ print("Player Selected: ", x)
 
 # simulating computer selection
 
-import random
+
 valid_options = ["Rock", "Paper", "Scissors"]
 c = random.choice(valid_options)
 print("Computer Selected: ", c)
