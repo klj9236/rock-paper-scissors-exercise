@@ -7,9 +7,7 @@ load_dotenv() #> loads contents of the .env file into the script's environment
 #brings in the player name from enviroment
 z = os.getenv("USER_NAME")
 
-print(z)
-
-print("Welcome", z, "Rock, Paper, Scissors, Shoot!")
+print("Welcome",z, "to Rock, Paper, Scissors, Shoot!")
 
 
 # ask for a user input
